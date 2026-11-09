@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ระบบสืบค้นคำถามที่พบบ่อย สายด่วนกรมควบคุมโรค 1422</title>
+  <meta name="description" content="ระบบสืบค้นฐานข้อมูลคำถามที่พบบ่อย (FAQ) และรายงานสถิติ สายด่วนกรมควบคุมโรค 1422 กระทรวงสาธารณสุข">
+
+  <!-- 1. เปลี่ยนไอคอนเว็บไซต์ (Favicon) ตรงนี้ (สามารถเปลี่ยน href เป็นลิงก์รูปโลโก้ .png ของหน่วยงานได้) -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+
+  <style>
+    /* รีเซ็ตขอบจอทั้งหมดเพื่อให้ Iframe แสดงผลเต็ม 100% ทั้งคอมและมือถือ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* ป้องกันการเกิด Scrollbar ซ้อนกัน 2 ชั้น */
+      background-color: #0a192f; /* สีพื้นหลังเดียวกับ Header ระหว่างรอโหลด */
+      font-family: 'Sarabun', sans-serif;
+    }
+
+    .iframe-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100dvh; /* รองรับความสูงหน้าจอมือถือยุคใหม่พอดีเป๊ะ */
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      z-index: 999999;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <!-- 2. นำลิงก์ Web App ที่ลงท้ายด้วย /exec มาใส่ในช่อง src ด้านล่างนี้ -->
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycby35sxK-dAAznmXbuQBM864JcCuuD_MbJF9rp7ekSznuHTeZQ28SI8oC7ebqZJMvbcv/exec"
+      title="ระบบสืบค้นคำถามที่พบบ่อย สายด่วนกรมควบคุมโรค 1422"
+      allow="clipboard-write"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
